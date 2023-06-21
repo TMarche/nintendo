@@ -31,7 +31,7 @@ function SearchBar({
                         searchBarState === "ACTIVE"
                             ? "cursor-text"
                             : "cursor-pointer"
-                    } text-black`}
+                    } text-neutral-700`}
                     placeholder="Search"
                 />
             </div>

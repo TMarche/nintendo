@@ -15,6 +15,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="flex flex-col min-h-screen">
+                <div className="h-14"></div>
                 <Navigation
                     searchBarState={searchBarState}
                     setSearchBarState={setSearchBarState}

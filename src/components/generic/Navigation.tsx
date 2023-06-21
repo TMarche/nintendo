@@ -12,7 +12,7 @@ function Navigation({
     setSearchBarState: (state: "ACTIVE" | "INACTIVE") => void;
 }) {
     return (
-        <div className="flex flex-row justify-between h-14">
+        <div className="fixed bg-white top-0 left-0 z-50 w-full flex flex-row justify-between h-14 text-neutral-700">
             <div className="flex flex-row sm:gap-4 flex-1 h-full">
                 <Link className="z-20 w-full sm:w-fit" to="/">
                     <div className="bg-bintendo p-4 w-full text-white">
