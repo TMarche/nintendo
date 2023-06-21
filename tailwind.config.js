@@ -4,7 +4,11 @@ export default {
     safelist: ["hidden"],
 
     theme: {
-        extend: {},
+        extend: {
+            transitionProperty: {
+                height: "height",
+            },
+        },
     },
     plugins: [],
 };

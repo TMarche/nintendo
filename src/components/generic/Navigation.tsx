@@ -12,9 +12,9 @@ function Navigation({
     setSearchBarState: (state: "ACTIVE" | "INACTIVE") => void;
 }) {
     return (
-        <div className="flex flex-row justify-between">
-            <div className="flex flex-row sm:gap-4 flex-1 sm:flex-none">
-                <Link className="w-full sm:w-fit" to="/">
+        <div className="flex flex-row justify-between h-14">
+            <div className="flex flex-row sm:gap-4 flex-1 h-full">
+                <Link className="z-20 w-full sm:w-fit" to="/">
                     <div className="bg-red-600 p-4 w-full text-white">
                         Bintendo
                     </div>

@@ -19,12 +19,6 @@ function App() {
                     searchBarState={searchBarState}
                     setSearchBarState={setSearchBarState}
                 />
-                {/* <div
-                    className={`${
-                        searchBarState === "INACTIVE" ? "hidden" : ""
-                    } bg-neutral-500 opacity-30 flex-1`}
-                    onClick={() => setSearchBarState("INACTIVE")}
-                ></div> */}
                 <Routes>
                     <Route
                         path="/"
@@ -35,10 +29,42 @@ function App() {
                             />
                         }
                     />
-                    <Route path="/cart" element={<CartPage />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/store" element={<StorePage />} />
-                    <Route path="/wishList" element={<WishListPage />} />
+                    <Route
+                        path="/cart"
+                        element={
+                            <CartPage
+                                searchBarState={searchBarState}
+                                setSearchBarState={setSearchBarState}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/login"
+                        element={
+                            <LoginPage
+                                searchBarState={searchBarState}
+                                setSearchBarState={setSearchBarState}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/store"
+                        element={
+                            <StorePage
+                                searchBarState={searchBarState}
+                                setSearchBarState={setSearchBarState}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/wishList"
+                        element={
+                            <WishListPage
+                                searchBarState={searchBarState}
+                                setSearchBarState={setSearchBarState}
+                            />
+                        }
+                    />
                 </Routes>
             </div>
         </BrowserRouter>
