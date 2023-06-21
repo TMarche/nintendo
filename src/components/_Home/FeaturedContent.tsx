@@ -1,11 +1,11 @@
 function FeaturedContent() {
     return (
         <section className="flex flex-row justify-center">
-            <div className="max-w-[1144px] my-8 sm:mx-8 flex-1 text-neutral-600">
+            <div className="max-w-[1144px] my-8 mx-4 sm:mx-8 flex-1 text-neutral-600">
                 <div className="">
                     <div className="font-bold mb-4 text-3xl">Featured</div>
                     <div
-                        className="flex flex-col sm:flex-row h-[340px] md:text-2xl font-small-caps sm:rounded-lg
+                        className="flex flex-col sm:flex-row h-[340px] md:text-2xl font-small-caps rounded-lg
                      bg-featured-bins bg-center bg-cover bg-no-repeat cursor-pointer"
                     >
                         <div
@@ -31,7 +31,7 @@ function FeaturedContent() {
                         <div
                             className="flex flex-col justify-around p-4 flex-1
                         text-white backdrop-blur-xl drop-shadow
-                        sm:rounded-e-lg
+                        sm:rounded-e-lg rounded-b-lg
                         "
                         >
                             <div className="text-center leading-none">
