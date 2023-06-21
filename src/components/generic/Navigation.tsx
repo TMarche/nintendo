@@ -13,9 +13,11 @@ function Navigation({
 }) {
     return (
         <div className="flex flex-row justify-between">
-            <div className="flex flex-row gap-4 md:flex-1">
-                <Link to="/">
-                    <div className="bg-red-600 p-4 text-white">Bintendo</div>
+            <div className="flex flex-row sm:gap-4 flex-1 sm:flex-none">
+                <Link className="w-full sm:w-fit" to="/">
+                    <div className="bg-red-600 p-4 w-full text-white">
+                        Bintendo
+                    </div>
                 </Link>
                 <div className="hidden md:flex flex-row flex-1 max-w-md items-center">
                     <SearchBar
@@ -24,7 +26,7 @@ function Navigation({
                     />
                 </div>
             </div>
-            <nav className="pr-8 flex-1">
+            <nav className="sm:pr-8 sm:flex-1">
                 <ul className="hidden h-full sm:flex flex-row justify-end items-center gap-4">
                     <li>
                         <Link
