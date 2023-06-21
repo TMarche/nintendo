@@ -1,5 +1,6 @@
 import Cover from "../generic/Cover";
 import Footer from "../generic/Footer";
+import FeaturedContent from "./FeaturedContent";
 import Hero from "./Hero";
 
 function HomePage({
@@ -39,12 +40,7 @@ function HomePage({
             </div>
             <hr />
             {/*Featured content section*/}
-            <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">
-                <div className="">
-                    <div className="font-bold mb-4">Featured</div>
-                    <div className="sm:h-[340px] bg-bintendo"></div>
-                </div>
-            </section>
+            <FeaturedContent />
             <hr />
             {/*Online store section*/}
             <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">

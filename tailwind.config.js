@@ -12,6 +12,9 @@ export default {
             colors: {
                 bintendo: "#E41319",
             },
+            fontFamily: {
+                "small-caps": ["Alegreya Sans SC", "sans-serif"],
+            },
             transitionTimingFunction: {
                 jiggle: "cubic-bezier(.5, 3, .5, -2)",
             },
