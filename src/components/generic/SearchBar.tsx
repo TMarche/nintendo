@@ -16,7 +16,7 @@ function SearchBar({
             <div
                 className="z-20 border-b-2 w-full flex flex-row gap-2 p-1
                     cursor-pointer
-                  hover:text-red-600 hover:border-red-600 
+                  hover:text-bintendo hover:border-bintendo 
                     ease-in-out duration-300"
                 onClick={() => {
                     if (searchRef.current === null) return;

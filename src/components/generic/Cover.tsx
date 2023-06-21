@@ -9,7 +9,7 @@ function Cover({
         <div
             className={`absolute h-full w-full top-0 ${
                 searchBarState === "INACTIVE" ? "hidden" : ""
-            } bg-neutral-500 opacity-30 flex-1`}
+            } bg-black opacity-50 flex-1`}
             onClick={() => setSearchBarState("INACTIVE")}
         ></div>
     );

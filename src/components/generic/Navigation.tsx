@@ -15,7 +15,7 @@ function Navigation({
         <div className="flex flex-row justify-between h-14">
             <div className="flex flex-row sm:gap-4 flex-1 h-full">
                 <Link className="z-20 w-full sm:w-fit" to="/">
-                    <div className="bg-red-600 p-4 w-full text-white">
+                    <div className="bg-bintendo p-4 w-full text-white">
                         Bintendo
                     </div>
                 </Link>
@@ -31,7 +31,7 @@ function Navigation({
                     <li>
                         <Link
                             to="/wishList"
-                            className="flex flex-row gap-1 hover:text-red-600 ease-in-out duration-300"
+                            className="flex flex-row gap-1 hover:text-bintendo ease-in-out duration-300"
                         >
                             <FavoriteIcon />
                             Wish List
@@ -40,7 +40,7 @@ function Navigation({
                     <li>
                         <Link
                             to="/cart"
-                            className="flex flex-row gap-1 hover:text-red-600 ease-in-out duration-300"
+                            className="flex flex-row gap-1 hover:text-bintendo ease-in-out duration-300"
                         >
                             <ShoppingCartIcon />
                             Cart
@@ -49,7 +49,7 @@ function Navigation({
                     <li>
                         <Link
                             to="/login"
-                            className="flex flex-row gap-1 hover:text-red-600 ease-in-out duration-300"
+                            className="flex flex-row gap-1 hover:text-bintendo ease-in-out duration-300"
                         >
                             <PersonIcon />
                             Log in / Sign up
