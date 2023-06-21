@@ -1,5 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import AnimateHeight from "react-animate-height";
 
 function SearchBar({
     searchBarState,
@@ -34,15 +35,13 @@ function SearchBar({
                     placeholder="Search"
                 />
             </div>
-            <div
-                className={`${
-                    searchBarState === "INACTIVE" ? "hidden" : ""
-                } absolute top-14 left-0 z-10 h-80 w-full bg-white
-                transition-height duration-300 ease-in-out
-                `}
+            <AnimateHeight
+                className="absolute w-full z-10 top-14 left-0 bg-white"
+                duration={300}
+                height={searchBarState === "ACTIVE" ? 320 : 0}
             >
-                Test
-            </div>
+                <div className="h-full w-full">Test</div>
+            </AnimateHeight>
         </>
     );
 }
