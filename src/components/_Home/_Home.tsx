@@ -15,16 +15,15 @@ function HomePage({
 }) {
     return (
         <div className="relative flex-1 ">
-            <Cover
-                searchBarState={searchBarState}
-                setSearchBarState={setSearchBarState}
-            />
+            {searchBarState === "ACTIVE" && (
+                <Cover setSearchBarState={setSearchBarState} />
+            )}
             {/*Hero Section*/}
             <div className="bg-gradient-to-bl from-neutral-500 via-white to-white">
                 <div className="max-w-[1440px] mx-auto">
                     <div className="sm:p-8 h-[calc(100vh-3.5rem)]">
                         <Hero />
-                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-4 sm:h-12 text-xl sm:text-3xl font-bold items-center">
+                        <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 md:h-12 text-xl md:text-3xl text-center md:text-left font-bold items-center">
                             <div className="text-neutral-600">
                                 Check out the presentation
                             </div>

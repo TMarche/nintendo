@@ -48,8 +48,8 @@ function FeaturedContent({ products }: { products: Product[] }) {
                     </div>
                 </div>
                 <div
-                    className="flex flex-col sm:flex-row items-center text-center gap-4
-                        sm:gap-8 sm:h-12 text-lg sm:text-2xl font-bold mb-8"
+                    className="flex flex-col md:flex-row items-center text-center gap-4
+                        md:gap-8 md:h-12 text-lg md:text-2xl font-bold mb-8"
                 >
                     <div>
                         An epic adventure across the land and skies of
