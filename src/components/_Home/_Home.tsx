@@ -1,3 +1,4 @@
+import { Product } from "../../models/Product";
 import Cover from "../generic/Cover";
 import Footer from "../generic/Footer";
 import FeaturedContent from "./FeaturedContent";
@@ -6,9 +7,11 @@ import Hero from "./Hero";
 function HomePage({
     searchBarState,
     setSearchBarState,
+    products,
 }: {
     searchBarState: "ACTIVE" | "INACTIVE";
     setSearchBarState: (state: "ACTIVE" | "INACTIVE") => void;
+    products: Product[];
 }) {
     return (
         <div className="relative flex-1 ">
@@ -29,7 +32,7 @@ function HomePage({
                                 href="https://www.youtube.com/watch?v=lINJW1oRYJA"
                                 target="_blank"
                                 className="py-2 px-8 bg-bintendo text-white font-normal text-base sm:text-xl rounded
-                        sm:hover:bg-red-800 sm:hover:py-3 sm:hover:px-9 sm:hover:-ml-1 ease-in-out duration-300
+                                  sm:hover:bg-red-800 sm:hover:py-3 sm:hover:px-9 sm:hover:-ml-1 ease-in-out duration-300
                         "
                             >
                                 Watch now
@@ -40,7 +43,7 @@ function HomePage({
             </div>
             <hr />
             {/*Featured content section*/}
-            <FeaturedContent />
+            <FeaturedContent products={products} />
             <hr />
             {/*Online store section*/}
             <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">

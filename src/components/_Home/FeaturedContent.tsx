@@ -1,4 +1,7 @@
-function FeaturedContent() {
+import { Product } from "../../models/Product";
+import Carousel from "./Carousel";
+
+function FeaturedContent({ products }: { products: Product[] }) {
     return (
         <section className="flex flex-row justify-center">
             <div className="max-w-[1144px] my-8 mx-4 sm:mx-8 flex-1 text-neutral-600">
@@ -44,7 +47,10 @@ function FeaturedContent() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center text-center gap-4 sm:gap-8 sm:h-12 text-lg sm:text-2xl font-bold ">
+                <div
+                    className="flex flex-col sm:flex-row items-center text-center gap-4
+                        sm:gap-8 sm:h-12 text-lg sm:text-2xl font-bold mb-8"
+                >
                     <div>
                         An epic adventure across the land and skies of
                         Trashtopia awaits
@@ -59,6 +65,7 @@ function FeaturedContent() {
                         Available now
                     </a>
                 </div>
+                <Carousel products={products} />
             </div>
         </section>
     );

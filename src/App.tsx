@@ -6,11 +6,15 @@ import StorePage from "./components/_Store/_Store";
 import WishListPage from "./components/_WishList/_WishList";
 import Navigation from "./components/generic/Navigation";
 import { useState } from "react";
+import { DEFAULT_PRODUCTS } from "./models/tables/DefaultProducts";
+import { Product } from "./models/Product";
 
 function App() {
     const [searchBarState, setSearchBarState] = useState<"ACTIVE" | "INACTIVE">(
         "INACTIVE"
     );
+
+    const [products, setProducts] = useState<Product[]>(DEFAULT_PRODUCTS);
 
     return (
         <BrowserRouter>
@@ -27,6 +31,7 @@ function App() {
                             <HomePage
                                 searchBarState={searchBarState}
                                 setSearchBarState={setSearchBarState}
+                                products={products}
                             />
                         }
                     />
