@@ -10,10 +10,9 @@ function CartPage({
     return (
         <div className="relative flex-1">
             CartPage
-            <Cover
-                searchBarState={searchBarState}
-                setSearchBarState={setSearchBarState}
-            />
+            {searchBarState === "ACTIVE" && (
+                <Cover setSearchBarState={setSearchBarState} />
+            )}
         </div>
     );
 }

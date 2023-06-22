@@ -10,10 +10,9 @@ function StorePage({
     return (
         <div className="relative flex-1">
             StorePage
-            <Cover
-                searchBarState={searchBarState}
-                setSearchBarState={setSearchBarState}
-            />
+            {searchBarState === "ACTIVE" && (
+                <Cover setSearchBarState={setSearchBarState} />
+            )}
         </div>
     );
 }

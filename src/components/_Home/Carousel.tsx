@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Product } from "../../models/Product";
 import CarouselCard from "./CarouselCard";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -74,7 +74,7 @@ function Carousel({ products }: { products: Product[] }) {
                     className="text-white opacity-100"
                 />
             </button>
-            {products.slice(0, 10).map((product, index) => {
+            {products.slice(0, 10).map((product) => {
                 return (
                     <CarouselCard key={product.productId} product={product} />
                 );

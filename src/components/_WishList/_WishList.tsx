@@ -10,10 +10,9 @@ function WishListPage({
     return (
         <div className="relative flex-1">
             WishListPage
-            <Cover
-                searchBarState={searchBarState}
-                setSearchBarState={setSearchBarState}
-            />
+            {searchBarState === "ACTIVE" && (
+                <Cover setSearchBarState={setSearchBarState} />
+            )}
         </div>
     );
 }

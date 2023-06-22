@@ -10,10 +10,9 @@ function LoginPage({
     return (
         <div className="relative flex-1">
             LoginPage
-            <Cover
-                searchBarState={searchBarState}
-                setSearchBarState={setSearchBarState}
-            />
+            {searchBarState === "ACTIVE" && (
+                <Cover setSearchBarState={setSearchBarState} />
+            )}
         </div>
     );
 }
