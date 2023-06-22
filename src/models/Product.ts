@@ -1,4 +1,3 @@
-import { faker } from "@faker-js/faker";
 import { getProductTypeByName } from "./tables/DefaultProductTypes";
 
 export class Product {
@@ -17,6 +16,7 @@ export class Product {
     constructor(
         productType: string,
         name: string,
+        image: string,
         description: string,
         tagLine: string,
         length: number,
@@ -26,8 +26,8 @@ export class Product {
         this.productId = this.getNextId();
         this.productTypeId =
             getProductTypeByName(productType)?.productTypeId || 0;
-        this.image = faker.image.urlLoremFlickr({ category: "business" });
         this.name = name;
+        this.image = image;
         this.description = description;
         this.tagLine = tagLine;
         this.length = length;

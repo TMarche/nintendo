@@ -4,6 +4,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "CleanSweep",
+        "bg-slim-trash",
         "The CleanSweep garbage bin is a powerhouse when it comes to waste management. With its robust construction and easy-to-clean design, it ensures a tidy and hygienic environment. Say goodbye to clutter and hello to cleanliness with CleanSweep.",
         "Sweep away the mess, be the best!",
         15,
@@ -13,6 +14,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "EcoBin",
+        "bg-eco-trash",
         "The EcoBin is the perfect choice for environmentally conscious individuals. Made from recycled materials, this bin is designed to reduce your carbon footprint. Its sleek and sustainable design complements any space while contributing to a greener future.",
         "Eco-friendly choice, a bin with voice!",
         12,
@@ -22,6 +24,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Industrial",
         "TrashMaster",
+        "bg-industrial-trash",
         "Take control of your trash with the TrashMaster. This bin is built to handle heavy-duty waste management tasks effortlessly. With its large capacity and durable build, it's the ultimate solution for commercial spaces and high-volume waste disposal needs.",
         "Trash no more, master the floor!",
         24,
@@ -31,6 +34,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "WasteWise",
+        "bg-big-trash",
         "The WasteWise bin is a smart and efficient waste management solution. Its innovative features, such as a foot pedal for touch-free operation and odor-blocking technology, make waste disposal a breeze. Keep your surroundings clean and fresh with WasteWise.",
         "Waste management made wise, no compromise!",
         20,
@@ -40,6 +44,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "SmartBin",
+        "bg-slim-trash",
         "Experience the future of waste management with the SmartBin. This intelligent bin incorporates cutting-edge technology to optimize waste disposal. From sensor-based monitoring to automatic trash compaction, SmartBin revolutionizes the way you handle garbage.",
         "Bin so smart, it's a work of art!",
         14,
@@ -49,6 +54,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "PurePurge",
+        "bg-big-trash",
         "The PurePurge bin is your go-to choice for maintaining a pristine environment. With its sleek design and advanced cleaning features, it ensures a thorough purification process. Bid farewell to germs and unpleasant odors with PurePurge.",
         "Purify your waste, make cleanliness surge!",
         16,
@@ -58,6 +64,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "CleanZone",
+        "bg-slim-trash",
         "Create a CleanZone with this specially designed garbage bin. Engineered to keep odors at bay and minimize cross-contamination, it provides a safe and sanitary waste management solution. Keep your space clean and your environment healthy with CleanZone.",
         "Keep it clean in your zone, with CleanZone!",
         18,
@@ -67,6 +74,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "ProTrash",
+        "bg-big-trash",
         "When it comes to professional waste management, the ProTrash bin reigns supreme. Its heavy-duty construction and functional design make it a reliable choice for commercial settings. Elevate your trash management game with ProTrash.",
         "Trash like a pro, let it go!",
         22,
@@ -76,6 +84,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "GreenGuard",
+        "bg-eco-trash",
         "The GreenGuard bin is the epitome of eco-friendliness. Made from sustainable materials and featuring recycling compartments, it promotes waste segregation and environmentally responsible practices. Choose GreenGuard for a greener and cleaner tomorrow.",
         "Guard the green, keep it pristine!",
         16,
@@ -85,6 +94,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Industrial",
         "BinSolutions",
+        "bg-industrial-trash",
         "BinSolutions offers a range of customizable garbage bins tailored to meet your specific needs. From size options to color choices, these bins provide a flexible and personalized waste management solution. Discover the perfect bin with BinSolutions.",
         "Find your bin resolution, with BinSolutions!",
         0,
@@ -94,6 +104,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "EliteWaste",
+        "bg-slim-trash",
         "Elevate your waste management standards with the EliteWaste bin. With its sleek and sophisticated design, it adds a touch of elegance to any space. Experience top-tier waste disposal with EliteWaste.",
         "Dispose with grace, no time to waste!",
         14,
@@ -103,6 +114,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "PureFlow",
+        "bg-sort-trash",
         "The PureFlow bin combines style and functionality seamlessly. Its streamlined design and smooth operation make waste disposal effortless and efficient. Embrace the elegance of PureFlow for a clutter-free environment.",
         "Let the waste flow, PureFlow will glow!",
         12,
@@ -112,6 +124,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "EnviroBin",
+        "bg-eco-trash",
         "The EnviroBin is your partner in preserving the environment. Crafted from recycled and recyclable materials, it exemplifies eco-consciousness. Make a positive impact on the planet with the sustainable practices of EnviroBin.",
         "Go green, let your waste begin to thin!",
         18,
@@ -121,6 +134,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "ProClean",
+        "bg-slim-trash",
         "ProClean is synonymous with cleanliness and hygiene. Engineered with easy-to-clean surfaces and advanced odor control mechanisms, it ensures a sanitary waste management experience. Choose ProClean for a spotless environment.",
         "Stay clean and lean, with ProClean!",
         16,
@@ -130,6 +144,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Commercial",
         "SmartSort",
+        "bg-sort-trash",
         "Simplify waste sorting with the SmartSort bin. Featuring multiple compartments and color-coded lids, it facilitates efficient recycling and waste segregation. Embrace the intelligence of SmartSort for a more organized waste management system.",
         "Sort with ease, keep it a breeze!",
         20,
@@ -139,6 +154,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Industrial",
         "PrimeTrash",
+        "bg-industrial-trash",
         "The PrimeTrash bin sets the benchmark for excellence in waste disposal. Its durable construction, ergonomic design, and hassle-free maintenance make it a prime choice for your waste-management needs.",
         "Trash that's prime, every single time!",
         24,
@@ -148,6 +164,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "FreshBins",
+        "bg-sort-trash",
         "FreshBins bring a breath of fresh air to waste management. With their innovative design and advanced odor control technology, these bins keep your space smelling clean and fresh. Say goodbye to unpleasant odors and hello to a refreshing waste disposal experience with FreshBins.",
         "Freshen up your space, embrace the bins' grace!",
         16,
@@ -157,6 +174,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "TerraBin",
+        "bg-eco-trash",
         "The TerraBin is designed with sustainability in mind. Crafted from eco-friendly materials, this bin blends seamlessly into any environment while making a positive impact on the planet. Embrace the beauty of nature and responsible waste management with TerraBin.",
         "From Earth to bin, waste management wins!",
         18,
@@ -166,6 +184,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Industrial",
         "MaxCapacity",
+        "bg-industrial-trash",
         "When it comes to handling large volumes of waste, MaxCapacity rises to the challenge. With its spacious design and sturdy construction, this bin offers maximum capacity without compromising on durability. Keep up with heavy waste disposal needs effortlessly with MaxCapacity.",
         "No waste will overflow, MaxCapacity's the way to go!",
         30,
@@ -175,6 +194,7 @@ export const DEFAULT_PRODUCTS = [
     new Product(
         "Home",
         "SparkleBin",
+        "bg-sort-trash",
         "SparkleBin adds a touch of glamour to waste management. Its sleek and shiny exterior elevates the aesthetics of any space, making it a statement piece. But it's not just about looks—SparkleBin is also highly functional, with features like easy-open lids and convenient waste disposal mechanisms. Shine bright with SparkleBin and transform your waste management routine.",
         "Bin that sparkles bright, makes your space shine with light!",
         14,

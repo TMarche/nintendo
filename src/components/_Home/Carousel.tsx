@@ -13,27 +13,9 @@ function Carousel({ products }: { products: Product[] }) {
 
     const SCROLL_AMOUNT = 640;
 
-    // TODO: Refactor duplicate code in scroll/handleScroll
     const scroll = (scrollOffset: number) => {
         if (ref.current == null) return;
         ref.current.scrollLeft += scrollOffset;
-
-        // Set left button styles
-        if (ref.current.scrollLeft + scrollOffset <= 0) {
-            setLeftButtonDynamicStyles("sm:invisible");
-        } else {
-            setLeftButtonDynamicStyles("sm:visible");
-        }
-
-        // Set right button styles
-        if (
-            ref.current.scrollLeft + scrollOffset >=
-            ref.current.scrollWidth - ref.current.offsetWidth
-        ) {
-            setRightButtonDynamicStyles("sm:invisible");
-        } else {
-            setRightButtonDynamicStyles("sm:visible");
-        }
     };
 
     const handleScroll = (event: React.UIEvent<HTMLElement>) => {

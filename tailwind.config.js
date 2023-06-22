@@ -1,13 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
-    safelist: ["hidden", "sm:hidden", "sm:block"],
-
+    safelist: [
+        "hidden",
+        "sm:hidden",
+        "sm:block",
+        "bg-big-trash",
+        "bg-industrial-trash",
+        "bg-slim-trash",
+        "bg-sort-trash",
+        "bg-eco-trash",
+    ],
     theme: {
         extend: {
             backgroundImage: {
                 "bintendo-direct": "url(/BintendoDirect.png)",
                 "featured-bins": "url(/FeaturedBins.png)",
+                "big-trash": "url(/BigTrash.png)",
+                "industrial-trash": "url(/IndustrialTrash.png)",
+                "slim-trash": "url(/SlimTrash2.png)",
+                "sort-trash": "url(/SortTrash.png)",
+                "eco-trash": "url(/EcoTrash.png)",
             },
             colors: {
                 bintendo: "#E41319",
