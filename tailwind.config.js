@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
-    safelist: ["hidden"],
+    safelist: ["hidden", "sm:hidden", "sm:block"],
 
     theme: {
         extend: {
