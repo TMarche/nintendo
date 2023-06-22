@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { Product } from "../../models/Product";
 import { getProductTypeById } from "../../models/tables/DefaultProductTypes";
+import { Ref } from "react";
 
-function CarouselCard({ product }: { product: Product }) {
+function CarouselCard({
+    product,
+    ref,
+}: {
+    product: Product;
+    ref: Ref<HTMLAnchorElement>;
+}) {
     return (
         <Link
+            ref={ref}
             to={`/store/${product.productId}`}
             className="relative h-full border-[1px] min-w-[300px] m-4 rounded-lg hover:text-bintendo
                 hover:h-[calc(100%+1rem)] hover:mb-8 ease-in-out duration-300
