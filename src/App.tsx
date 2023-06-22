@@ -14,7 +14,7 @@ function App() {
         "INACTIVE"
     );
 
-    const [products, setProducts] = useState<Product[]>(DEFAULT_PRODUCTS);
+    const [products] = useState<Product[]>(DEFAULT_PRODUCTS);
 
     return (
         <BrowserRouter>

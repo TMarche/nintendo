@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { Product } from "../../models/Product";
-import { useState } from "react";
-import AnimateHeight from "react-animate-height";
 import { getProductTypeById } from "../../models/tables/DefaultProductTypes";
 
 function CarouselCard({ product }: { product: Product }) {
