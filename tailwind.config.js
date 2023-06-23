@@ -21,6 +21,11 @@ export default {
                 "slim-trash": "url(/SlimTrash2.png)",
                 "sort-trash": "url(/SortTrash.png)",
                 "eco-trash": "url(/EcoTrash.png)",
+                "wes-bins": "url(/WesBins.jpg)",
+            },
+            boxShadow: {
+                "button-initial": "0 0 0 0 rgba(228,19,25,1)",
+                "button-hover": "0 0 0 4px rgba(153,27,27,1)",
             },
             colors: {
                 bintendo: "#E41319",

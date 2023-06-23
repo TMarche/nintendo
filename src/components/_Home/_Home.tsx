@@ -1,8 +1,10 @@
 import { Product } from "../../models/Product";
 import Cover from "../generic/Cover";
+import ExpandingButtonLink from "../generic/ExpandingButtonLink";
 import Footer from "../generic/Footer";
 import FeaturedContent from "./FeaturedContent";
 import Hero from "./Hero";
+import OnlineStore from "./OnlineStore";
 
 function HomePage({
     searchBarState,
@@ -27,15 +29,12 @@ function HomePage({
                             <div className="text-neutral-600">
                                 Check out the presentation
                             </div>
-                            <a
-                                href="https://www.youtube.com/watch?v=lINJW1oRYJA"
+                            <ExpandingButtonLink
                                 target="_blank"
-                                className="py-2 px-8 bg-bintendo text-white font-normal text-base sm:text-xl rounded
-                                  sm:hover:bg-red-800 sm:hover:py-3 sm:hover:px-9 sm:hover:-ml-1 ease-in-out duration-300
-                        "
+                                to="https://www.youtube.com/watch?v=lINJW1oRYJA"
                             >
                                 Watch now
-                            </a>
+                            </ExpandingButtonLink>
                         </div>
                     </div>
                 </div>
@@ -45,12 +44,7 @@ function HomePage({
             <FeaturedContent products={products} />
             <hr />
             {/*Online store section*/}
-            <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">
-                <div className="">
-                    <div className="font-bold mb-4">Online Store</div>
-                    <div className="sm:h-[340px] bg-bintendo"></div>
-                </div>
-            </section>
+            <OnlineStore />
             <hr />
             {/*Garbage System Section*/}
             <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">

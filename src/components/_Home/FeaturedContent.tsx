@@ -1,10 +1,11 @@
 import { Product } from "../../models/Product";
+import ExpandingButtonLink from "../generic/ExpandingButtonLink";
 import Carousel from "./Carousel";
 
 function FeaturedContent({ products }: { products: Product[] }) {
     return (
         <section className="flex flex-row justify-center">
-            <div className="max-w-[1144px] my-8 mx-4 sm:mx-8 flex-1 text-neutral-600">
+            <div className="max-w-[1144px] my-8 mx-4 text-neutral-600">
                 <div className="font-bold mb-4 text-3xl">Featured</div>
                 <div
                     className="flex flex-col sm:flex-row h-[340px] mb-4 md:text-2xl font-small-caps rounded-lg
@@ -49,21 +50,18 @@ function FeaturedContent({ products }: { products: Product[] }) {
                 </div>
                 <div
                     className="flex flex-col md:flex-row items-center text-center gap-4
-                        md:gap-8 md:h-12 text-lg md:text-2xl font-bold mb-8"
+                        md:gap-8 text-lg md:text-2xl font-bold mb-8"
                 >
                     <div>
                         An epic adventure across the land and skies of
                         Trashtopia awaits
                     </div>
-                    <a
-                        href="https://www.youtube.com/watch?v=lINJW1oRYJA"
+                    <ExpandingButtonLink
                         target="_blank"
-                        className="py-2 px-8 bg-bintendo text-white font-normal text-base sm:text-xl rounded
-                            sm:hover:bg-red-800 sm:hover:py-3 sm:hover:px-9 sm:hover:-ml-1 ease-in-out duration-300
-                            "
+                        to="https://www.youtube.com/watch?v=lINJW1oRYJA"
                     >
                         Available now
-                    </a>
+                    </ExpandingButtonLink>
                 </div>
                 <Carousel products={products} />
             </div>
