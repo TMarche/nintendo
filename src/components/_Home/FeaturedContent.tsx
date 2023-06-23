@@ -50,7 +50,7 @@ function FeaturedContent({ products }: { products: Product[] }) {
                 </div>
                 <div
                     className="flex flex-col md:flex-row items-center text-center gap-4
-                        md:gap-8 text-lg md:text-2xl font-bold mb-8"
+                        md:gap-8 text-lg md:text-2xl mb-8"
                 >
                     <div>
                         An epic adventure across the land and skies of

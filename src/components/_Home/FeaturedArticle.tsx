@@ -4,7 +4,7 @@ import { NewsArticle } from "../../models/NewsArticle";
 function FeaturedArticle({ article }: { article: NewsArticle }) {
     return (
         <Link
-            to="/store"
+            to={`/news/${article.newsArticleId}`}
             className="flex flex-col hover:text-bintendo duration-300"
         >
             <div
@@ -18,7 +18,7 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
             <p className="text-base text-neutral-600 mb-4 truncate">
                 {article.content[0]}
             </p>
-            <p className="text-base h-12 truncate text-bintendo font-bold underline underline-offset-2">
+            <p className="text-base text-bintendo font-bold underline underline-offset-2">
                 Read more
             </p>
         </Link>

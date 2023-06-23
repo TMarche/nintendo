@@ -13,6 +13,7 @@ export default {
         "bg-wes-bins",
         "bg-garbage-truck",
         "bg-recycling",
+        "bg-beach-trash",
     ],
     theme: {
         extend: {
@@ -27,6 +28,7 @@ export default {
                 "wes-bins": "url(/WesBins.jpg)",
                 "garbage-truck": "url(/GarbageTruck.jpg)",
                 recycling: "url(/Recycling.jpg)",
+                "beach-trash": "url(/BeachTrash.jpg)",
             },
             boxShadow: {
                 "button-initial": "0 0 0 0 rgba(228,19,25,1)",
@@ -34,6 +36,7 @@ export default {
             },
             colors: {
                 bintendo: "#E41319",
+                "bintendo-light": "#EFEFEF",
             },
             fontFamily: {
                 "small-caps": ["Alegreya Sans SC", "sans-serif"],

@@ -5,6 +5,7 @@ import LoginPage from "./components/_Login/_Login";
 import StorePage from "./components/_Store/_Store";
 import WishListPage from "./components/_WishList/_WishList";
 import Navigation from "./components/generic/Navigation";
+import NewsArticlePage from "./components/_NewsArticle/_NewsArticle";
 import { useState } from "react";
 import { DEFAULT_PRODUCTS } from "./models/tables/DefaultProducts";
 import { Product } from "./models/Product";
@@ -36,6 +37,15 @@ function App() {
                                 setSearchBarState={setSearchBarState}
                                 products={products}
                                 newsArticles={newsArticles}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/news/:id"
+                        element={
+                            <NewsArticlePage
+                                searchBarState={searchBarState}
+                                setSearchBarState={setSearchBarState}
                             />
                         }
                     />
