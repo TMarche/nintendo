@@ -8,6 +8,8 @@ import Navigation from "./components/generic/Navigation";
 import { useState } from "react";
 import { DEFAULT_PRODUCTS } from "./models/tables/DefaultProducts";
 import { Product } from "./models/Product";
+import { DEFAULT_NEWS_ARTICLES } from "./models/tables/DefaultNewsArticles";
+import { NewsArticle } from "./models/NewsArticle";
 
 function App() {
     const [searchBarState, setSearchBarState] = useState<"ACTIVE" | "INACTIVE">(
@@ -15,6 +17,7 @@ function App() {
     );
 
     const [products] = useState<Product[]>(DEFAULT_PRODUCTS);
+    const [newsArticles] = useState<NewsArticle[]>(DEFAULT_NEWS_ARTICLES);
 
     return (
         <BrowserRouter>
@@ -32,6 +35,7 @@ function App() {
                                 searchBarState={searchBarState}
                                 setSearchBarState={setSearchBarState}
                                 products={products}
+                                newsArticles={newsArticles}
                             />
                         }
                     />

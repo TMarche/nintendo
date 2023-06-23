@@ -1,19 +1,24 @@
+import { NewsArticle } from "../../models/NewsArticle";
 import { Product } from "../../models/Product";
 import Cover from "../generic/Cover";
 import ExpandingButtonLink from "../generic/ExpandingButtonLink";
 import Footer from "../generic/Footer";
 import FeaturedContent from "./FeaturedContent";
+import GarbageSystems from "./GarbageSystems";
 import Hero from "./Hero";
+import News from "./News";
 import OnlineStore from "./OnlineStore";
 
 function HomePage({
     searchBarState,
     setSearchBarState,
     products,
+    newsArticles,
 }: {
     searchBarState: "ACTIVE" | "INACTIVE";
     setSearchBarState: (state: "ACTIVE" | "INACTIVE") => void;
     products: Product[];
+    newsArticles: NewsArticle[];
 }) {
     return (
         <div className="relative flex-1 ">
@@ -47,20 +52,10 @@ function HomePage({
             <OnlineStore />
             <hr />
             {/*Garbage System Section*/}
-            <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">
-                <div className="">
-                    <div className="font-bold mb-4">Garbage Systems</div>
-                    <div className="sm:h-[340px] bg-bintendo"></div>
-                </div>
-            </section>
+            <GarbageSystems />
             <hr />
             {/*News Section*/}
-            <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">
-                <div className="">
-                    <div className="font-bold mb-4">News</div>
-                    <div className="sm:h-[340px] bg-bintendo"></div>
-                </div>
-            </section>
+            <News newsArticles={newsArticles} />
             <hr />
             {/*Characters Section*/}
             <section className="max-w-[1144px] my-8 mx-auto text-3xl text-neutral-600">

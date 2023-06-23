@@ -10,6 +10,9 @@ export default {
         "bg-slim-trash",
         "bg-sort-trash",
         "bg-eco-trash",
+        "bg-wes-bins",
+        "bg-garbage-truck",
+        "bg-recycling",
     ],
     theme: {
         extend: {
@@ -22,6 +25,8 @@ export default {
                 "sort-trash": "url(/SortTrash.png)",
                 "eco-trash": "url(/EcoTrash.png)",
                 "wes-bins": "url(/WesBins.jpg)",
+                "garbage-truck": "url(/GarbageTruck.jpg)",
+                recycling: "url(/Recycling.jpg)",
             },
             boxShadow: {
                 "button-initial": "0 0 0 0 rgba(228,19,25,1)",

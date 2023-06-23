@@ -8,7 +8,7 @@ function FeaturedContent({ products }: { products: Product[] }) {
             <div className="max-w-[1144px] my-8 mx-4 text-neutral-600">
                 <div className="font-bold mb-4 text-3xl">Featured</div>
                 <div
-                    className="flex flex-col sm:flex-row h-[340px] mb-4 md:text-2xl font-small-caps rounded-lg
+                    className="flex flex-col sm:flex-row h-80 mb-4 md:text-2xl font-small-caps rounded-lg
                      bg-featured-bins bg-center bg-cover bg-no-repeat cursor-pointer"
                 >
                     <div
